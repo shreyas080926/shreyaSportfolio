@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shreya Srivastava | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.05); }
+        .text-gradient { background: linear-gradient(to right, #818cf8, #c084fc, #f472b6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .animate-float { animation: float 6s ease-in-out infinite; }
+        @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-20px); } }
+    </style>
+</head>
+<body class="bg-[#020617] text-slate-100 selection:bg-indigo-500/30">
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full z-50 glass h-16">
+        <div class="max-w-7xl mx-auto px-6 h-full flex items-center justify-between">
+            <span class="text-xl font-bold text-gradient">SS.</span>
+            <div class="hidden md:flex gap-8 text-sm font-medium text-slate-400">
+                <a href="#projects" class="hover:text-white transition-colors">Projects</a>
+                <a href="#experience" class="hover:text-white transition-colors">Experience</a>
+                <a href="#skills" class="hover:text-white transition-colors">Skills</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="relative pt-32 pb-20 px-6 overflow-hidden min-h-screen flex items-center">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[500px] bg-indigo-500/10 blur-[120px] rounded-full -z-10"></div>
+        <div class="max-w-7xl mx-auto w-full">
+            <div class="max-w-3xl" id="hero-content">
+                <h2 class="text-indigo-400 font-bold mb-4 uppercase tracking-[0.2em] text-xs">Software Developer</h2>
+                <h1 class="text-6xl md:text-8xl font-extrabold mb-6 tracking-tight leading-[1.1]">
+                    Shreya <br />
+                    <span class="text-gradient">Srivastava</span>
+                </h1>
+                <p class="text-lg text-slate-400 mb-10 leading-relaxed max-w-xl">
+                    Building modern web experiences and exploring the intersection of robotics and software. 
+                    B.Tech IT with a focus on scalable full-stack applications and premium UI/UX.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="Shreya_Resume.pdf" download class="group px-8 py-4 bg-indigo-600 hover:bg-indigo-500 text-white rounded-full font-bold transition-all flex items-center gap-2 shadow-lg shadow-indigo-600/20">
+                        <i data-lucide="download" class="w-5 h-5"></i>
+                        Download Resume
+                        <i data-lucide="chevron-right" class="w-5 h-5 group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                    <div class="flex items-center gap-2 px-4">
+                        <a href="https://github.com/shreyas080926" target="_blank" class="p-3 glass rounded-full hover:bg-white/5 transition-all text-slate-400 hover:text-white"><i data-lucide="github" class="w-6 h-6"></i></a>
+                        <a href="https://linkedin.com/in/shreya-srivastava-6654a0354/" target="_blank" class="p-3 glass rounded-full hover:bg-white/5 transition-all text-slate-400 hover:text-white"><i data-lucide="linkedin" class="w-6 h-6"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="py-24 px-6 bg-slate-900/20">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl font-bold mb-12 tracking-tight">Featured Projects</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="group glass rounded-3xl overflow-hidden hover:border-indigo-500/50 transition-all duration-500">
+                    <div class="aspect-[16/10] relative overflow-hidden">
+                        <img src="bookmark-manager.png" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-xl font-bold mb-2 group-hover:text-indigo-400 transition-colors">Bookmark Manager</h3>
+                        <p class="text-slate-400 text-sm mb-6 leading-relaxed">Full-stack link management system with Google OAuth and Supabase Realtime synchronization.</p>
+                        <div class="flex gap-2 mb-8">
+                            <span class="px-3 py-1 glass rounded-lg text-[10px] font-bold uppercase tracking-wider text-slate-500">Next.js</span>
+                            <span class="px-3 py-1 glass rounded-lg text-[10px] font-bold uppercase tracking-wider text-slate-500">Supabase</span>
+                        </div>
+                        <a href="https://bookmark-app-six-murex.vercel.app/" target="_blank" class="inline-flex items-center gap-2 text-sm font-bold text-indigo-400 hover:text-indigo-300">View Live <i data-lucide="external-link" class="w-4 h-4"></i></a>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="group glass rounded-3xl overflow-hidden hover:border-violet-500/50 transition-all duration-500">
+                    <div class="aspect-[16/10] relative overflow-hidden">
+                        <img src="music-app.png" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-xl font-bold mb-2 group-hover:text-violet-400 transition-colors">MUSIX-APP</h3>
+                        <p class="text-slate-400 text-sm mb-6 leading-relaxed">Premium music player with custom controls, visualizer, and playlist management using Vanilla JS.</p>
+                        <div class="flex gap-2 mb-8">
+                            <span class="px-3 py-1 glass rounded-lg text-[10px] font-bold uppercase tracking-wider text-slate-500">JavaScript</span>
+                            <span class="px-3 py-1 glass rounded-lg text-[10px] font-bold uppercase tracking-wider text-slate-500">CSS3</span>
+                        </div>
+                        <a href="https://shreyas080926.github.io/music-app/" target="_blank" class="inline-flex items-center gap-2 text-sm font-bold text-violet-400 hover:text-violet-300">View Live <i data-lucide="external-link" class="w-4 h-4"></i></a>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="group glass rounded-3xl overflow-hidden hover:border-fuchsia-500/50 transition-all duration-500">
+                    <div class="aspect-[16/10] relative overflow-hidden">
+                        <img src="food-ordering.png" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-xl font-bold mb-2 group-hover:text-fuchsia-400 transition-colors">Food Ordering Platform</h3>
+                        <p class="text-slate-400 text-sm mb-6 leading-relaxed">Comprehensive food delivery platform with admin dashboard and real-time order tracking.</p>
+                        <div class="flex gap-2 mb-8">
+                            <span class="px-3 py-1 glass rounded-lg text-[10px] font-bold uppercase tracking-wider text-slate-500">HTML5</span>
+                            <span class="px-3 py-1 glass rounded-lg text-[10px] font-bold uppercase tracking-wider text-slate-500">SQL</span>
+                        </div>
+                        <span class="inline-flex items-center gap-2 text-sm font-bold text-slate-500">Concept Project <i data-lucide="code" class="w-4 h-4"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="py-24 px-6">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl font-bold mb-16">Journey</h2>
+            <div class="relative pl-12 border-l border-white/5 space-y-20">
+                <div class="relative">
+                    <div class="absolute -left-[60px] top-0 w-6 h-6 rounded-full bg-indigo-600 border-4 border-[#020617] shadow-[0_0_20px_rgba(79,70,229,0.5)]"></div>
+                    <div>
+                        <span class="text-indigo-400 text-sm font-bold uppercase tracking-widest">March 2025 – June 2025</span>
+                        <h3 class="text-2xl font-bold mt-2">Robotics Workshop Intern</h3>
+                        <p class="text-slate-400 font-medium mb-6">Kalam Pragati Robotics Bot Workshop (AKTU)</p>
+                        <div class="max-w-2xl text-slate-400 leading-relaxed bg-white/5 p-6 rounded-2xl border border-white/5">
+                            Gained hands-on experience in building and programming autonomous robots using Arduino and Raspberry Pi. 
+                            Focused on sensor integration, motor control, and hardware debugging.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="py-24 px-6 bg-slate-900/20">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl font-bold mb-12 tracking-tight">Technical Arsenal</h2>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="p-6 glass rounded-2xl">
+                    <h3 class="text-indigo-400 font-bold mb-4 uppercase text-xs tracking-widest">Languages</h3>
+                    <p class="text-sm text-slate-300">Python, C/C++, JavaScript, SQL, HTML/CSS</p>
+                </div>
+                <div class="p-6 glass rounded-2xl">
+                    <h3 class="text-violet-400 font-bold mb-4 uppercase text-xs tracking-widest">Frameworks</h3>
+                    <p class="text-sm text-slate-300">Next.js, React, Node.js, Tailwind CSS</p>
+                </div>
+                <div class="p-6 glass rounded-2xl">
+                    <h3 class="text-fuchsia-400 font-bold mb-4 uppercase text-xs tracking-widest">Tools</h3>
+                    <p class="text-sm text-slate-300">Git, GitHub, Power BI, Postman, Supabase</p>
+                </div>
+                <div class="p-6 glass rounded-2xl">
+                    <h3 class="text-pink-400 font-bold mb-4 uppercase text-xs tracking-widest">Concepts</h3>
+                    <p class="text-sm text-slate-300">Data Structures, Algorithms, DBMS, OOPS</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-20 px-6 border-t border-white/5 bg-slate-950">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12">
+            <span class="text-2xl font-bold text-gradient">SS.</span>
+            <div class="flex gap-8">
+                <a href="https://github.com/shreyas080926" target="_blank" class="text-slate-400 hover:text-white transition-colors text-sm font-medium">GitHub</a>
+                <a href="https://linkedin.com/in/shreya-srivastava-6654a0354/" target="_blank" class="text-slate-400 hover:text-white transition-colors text-sm font-medium">LinkedIn</a>
+                <a href="mailto:shreyasrivastava0620@gmail.com" class="text-slate-400 hover:text-white transition-colors text-sm font-medium">Contact</a>
+            </div>
+            <p class="text-slate-500 text-sm">© 2026 Shreya Srivastava. Built for Excellence.</p>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+        // Intersection Observer for fade-in animations
+        const reveal = () => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            document.querySelectorAll('section > div').forEach(el => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(20px)';
+                el.style.transition = 'all 0.8s ease-out';
+                observer.observe(el);
+            });
+        };
+        reveal();
+    </script>
+</body>
+</html>
